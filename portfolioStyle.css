@@ -17,7 +17,7 @@ body{
 
 .logo{
     text-decoration: none;
-    color: black;
+    color: #2e364c;
     font-size: 1.70rem;
     margin-left: 2rem;
     font-family:"Manrope", sans-serif;
@@ -26,15 +26,22 @@ body{
     
 }
 
+.logo-span{
+    color: pink;
+}
 
 .nav-container{
-    background-color: #F5F5F7;
+    background-color: #050713;
     position: relative;
+    height: 4.2rem;
+    
 }
 
 .nav{
     display: flex;
     justify-content: space-between;
+    padding-top: 1rem;
+    
    
 }
 
@@ -43,10 +50,13 @@ body{
  gap:100px;
  margin: 0 auto;
  padding-left: 11rem;
+ align-items: center;
+justify-content: center;
+
 }
 
 .nav ul a{
-    color: black;
+    color: white;
     font-size: 1.25rem;
     font-family:"Manrope", sans-serif;
     font-weight: 600;
@@ -57,7 +67,8 @@ body{
     color: black;
     gap: 3rem;
     cursor: pointer;
-    transform: translateX(-30px);
+    padding-right: 2rem;
+    
 
 }
 
@@ -67,7 +78,7 @@ body{
 
 
 .icons a  span{
-    color: black;
+    color: white;
     font-size: 1.25rem;
     font-family:"Manrope", sans-serif;
     font-weight: 700;
@@ -76,7 +87,7 @@ body{
 }
 
 .fa-brands.fa-github{
-color:#000000
+color:white
 }
 
 .fa-brands.fa-square-linkedin{
@@ -101,6 +112,7 @@ color:#000000
     font-family:"Manrope", sans-serif;
     font-weight: 700;
     width: 500px;
+    color: pink;
 }
 
 #hero-text{
@@ -109,6 +121,8 @@ color:#000000
     font-size: 1.4rem;
     font-weight: 400;
     width: 500px;
+    color: white;
+    
 }
 
 
@@ -127,7 +141,10 @@ color:#000000
     margin-left: 11rem;
     cursor: pointer;
    padding: 1rem;
-   border-radius: .25rem;
+   background-color: #050713;
+   color: white;
+   border-radius: .40rem;
+   border-width: .25px;
 }
 
 
@@ -149,7 +166,7 @@ color:#000000
 .hero-container{
     display: flex;
     justify-content: space-between;
-    background-color: #F5F5F7;
+    background-color: #0f131e;
     width: 100%;
     min-height: 100vh;
     padding: 0px 80px;
@@ -177,16 +194,15 @@ color:#000000
 .skills-mid{
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     gap:1rem;
 }
 
 .skills-btm{
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    height: 150px;
-    width:150px;
+    flex-direction: column;
+    
 }
 
 
@@ -198,16 +214,17 @@ width:100px;
 
 #skills-text{
     font-size: 4rem;
-    color: black;
+    color: pink;
     font-family:"Manrope", sans-serif;
     font-weight: 700;
+    padding-top: 3rem;
 }
 
 
 
 .btm-container{
     min-height: 100vh;
-    background-color:#F5F5F7 ;
+    background-color:#050713 ;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -216,7 +233,7 @@ width:100px;
 
 .footer-heading{
     font-size: 4rem;
-    color: black;
+    color: pink;
     font-family:"Manrope", sans-serif;
     font-weight: 700;
     width: 500px;
@@ -240,10 +257,10 @@ label{
     text-transform: uppercase;
     align-items: center;
     justify-content: center;
-    color: black;
-    font-size: 1rem;
+    color: white;
+    font-size: .75rem;
     font-family:"Manrope", sans-serif;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 input{
@@ -251,22 +268,45 @@ input{
     border-radius: .25rem;
     width:500px;
     height: 3rem;
-    width:100%
+    width:100%;
+    border-width: .25px;
 }
 
 
 textarea{
     height: 6rem;
     width: 500px;
+    padding-left: 1rem;
+    padding-top: .5rem;
 }
 
 textarea::placeholder{
   text-align: center;
-  padding-top: 2.5rem;
+  padding-top: 2rem;
 }
 
 
 #form-submit{
     width:500px;
     height: 3rem;
+    background-color:#007bff;
+    border-width: .25px;
+    color: white;
+    border-radius: .40rem;
+}
+
+
+.success-msg{
+    background-color: #050713;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.success-msg h1{
+    color: pink;
+    font-family: "DM Sans", 
+    sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
